@@ -52,5 +52,5 @@ Berikut adalah detail untuk setiap kolom dalam sheet `Database Santri`. Pastikan
 ---
 [Kembali ke Daftar Isi Utama](../README.md)
 
-[Sebelumnya - Jumlah Harus Dibayar](../docs/Jumlah_harus_dibayar.md) | 
+[Sebelumnya - Jumlah Harus Dibayar](../docs/Jumlah_Harus_Dibayar.md) | 
 [Selanjutnya - Input Pembayaran](../docs/Input_Pembayaran.md)
