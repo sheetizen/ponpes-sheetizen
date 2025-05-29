@@ -24,8 +24,11 @@ Berikut adalah **Contoh Baris Data Pengaturan WA:** di sheet `SETUP WA`.
 
 ## 3. Keterkaitan dengan Sheet atau Script Lain
 
-* **`Input Pengeluaran`**: `Nomor WA Notif Pengeluaran`: akan digunakan untuk mengirim detail pengeluaran ke pimpinan ponpes.
+* **`Nomor WA Notif Pengeluaran`**: akan digunakan untuk mengirim detail pengeluaran ke pimpinan ponpes.
 * **`Nama Pengirim di WA` dan `Footer Tambahan WA`**: akan digunakan sebagai detail informasi di notif WA cetak kuitansi kirim ke wali atau orang tua santri.
 
 ---
 [Kembali ke Daftar Isi Utama](../README.md)
+
+[Sebelumnya - Setup](../docs/SETUP.md) | 
+[Selanjutnya - Jumlah Harus Dibayar](../docs/Jumlah_Harus_Dibayar.md)
