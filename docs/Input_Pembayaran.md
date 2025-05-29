@@ -66,11 +66,11 @@ Setelah yakin data sudah sesuai, Anda dapat mencetak kuitansi (dalam bentuk PDF)
 6. Jika sudah ada emoji ✅	atau 📧, tidak akan diproses. Hal ini untuk menghindari dobel kuitansi atau kirim WA.
 
 
-### C. Cetak Berdasarkan Tanggal
-1. Copy nomor kuitansi yang ingin dicetak (hanya bisa satu nomor kuitansi per jalankan script). Contoh nomor kuitansi `KWI/280525/001`
+### Cetak Berdasarkan Tanggal
+1. Copy tanggal yang ingin dicetak (hanya bisa satu nomor kuitansi per jalankan script). Contoh nomor kuitansi `28/05/2025` dibaca 28 Mei 2025.
 2. Klik menu `Laporan & Kuitansi`
 3. Pilih `Kuitansi Pembayaran`
-4. Pilih `Cetak & Kirim WA berdasarkan nomor jika Belum Diproses`
+4. Pilih `Cetak & Kirim WA berdasarkan tanggal jika Belum Diproses`
 5. Otomatis akan mencetak PDF dan kirim WA ke nomor wali/ortu santri jika belum ada status cetak.
 6. Jika sudah ada emoji ✅	atau 📧, tidak akan diproses. Hal ini untuk menghindari dobel kuitansi atau kirim WA.
 
