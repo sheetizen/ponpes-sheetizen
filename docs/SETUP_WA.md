@@ -8,15 +8,7 @@ Sheet `SETUP WA` bertujuan untuk menyimpan semua parameter konfigurasi yang berk
 
 ## 2. Struktur Kolom dan Panduan Pengisian
 
-Berikut adalah detail setiap kolom dalam sheet `SETUP WA`.
-
-| Nama Kolom         | Tipe Data      | Wajib Diisi?                | Contoh Isi                                                                       | Keterangan                                                                                                                              |
-|--------------------|----------------|-----------------------------|----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| `Parameter_WA`     | Teks           | **YA** | `API_KEY_WA_GATEWAY`                                                             | Label atau deskripsi dari item konfigurasi WhatsApp.                                                                                     |
-| `Nilai_Parameter`  | Teks           | **YA (jika fitur aktif)** | `abcdef123456xyz789`                                                             | Nilai aktual dari item konfigurasi WhatsApp.                                                                                             |
-| `Deskripsi_Fungsi` | Teks           | Tidak                       | `Kunci API untuk layanan WhatsApp Gateway XYZ`                                     | Penjelasan fungsi dari parameter tersebut.                                                                                              |
-
-**Contoh Baris Data Pengaturan WA:**
+Berikut adalah **Contoh Baris Data Pengaturan WA:** di sheet `SETUP WA`. 
 
 | Parameter_WA                        | Nilai_Parameter                                                                                             | Deskripsi_Fungsi                                                               |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
