@@ -10,8 +10,7 @@ Berikut adalah detail untuk setiap kolom dalam sheet `Jumlah Harus Dibayar`.
 
 | Nama Kolom                | Tipe Data         | Wajib Diisi? | Contoh Isi                                | Keterangan                                                                                                                                  |
 |---------------------------|-------------------|--------------|-------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `Nama Bulan Masehi`              | Teks       | **YA** | `Januari`, `Februari`, ..., `Desember`
-| Bulan dalam Masehi. |
+| `Nama Bulan Masehi`              | Teks       | **YA** | `Januari`, `Februari`, ..., `Desember` | Bulan dalam Masehi. |
 | `Nama Bulan Hijriah`       | Teks              | **YA** | `Muharram`, `Safar`, ..., `Dzulhijjah` | Bulan dalam Hijriah.                                                                                               |
 | `Kategori_Tagihan`        | Teks (Pilihan)    | **YA** | `SPP`, `Uang Pangkal`, `Iuran Kegiatan`, `Denda`, `Lain-lain` | Pengelompokan jenis tagihan. Sebaiknya gunakan Data Validation.                                                                          |
 | `Nominal_Tagihan`         | Angka             | **YA** | `500000`                                  | Jumlah nominal yang harus dibayar untuk tagihan ini (dalam Rupiah, tanpa titik atau koma).                                                    |
