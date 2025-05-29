@@ -8,7 +8,7 @@ Sheet `SETUP WA` bertujuan untuk menyimpan semua parameter konfigurasi yang berk
 
 ## 2. Struktur Kolom dan Panduan Pengisian
 
-Berikut adalah perkiraan detail untuk setiap kolom dalam sheet `SETUP WA`.
+Berikut adalah detail setiap kolom dalam sheet `SETUP WA`.
 
 | Nama Kolom         | Tipe Data      | Wajib Diisi?                | Contoh Isi                                                                       | Keterangan                                                                                                                              |
 |--------------------|----------------|-----------------------------|----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
@@ -20,9 +20,9 @@ Berikut adalah perkiraan detail untuk setiap kolom dalam sheet `SETUP WA`.
 
 | Parameter_WA                        | Nilai_Parameter                                                                                             | Deskripsi_Fungsi                                                               |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| `AKTIFKAN_NOTIFIKASI_WA`            | `YA` / `TIDAK`                                                                                              | Mengaktifkan atau menonaktifkan semua fitur notifikasi WA.                       |
-| `API_KEY_WA_GATEWAY`                | `abcdef123456xyz789`                                                                                        | Kunci API dari penyedia layanan WhatsApp Gateway (jika menggunakan).              |
-| `NOMOR_WA_PENGIRIM`                 | `+6281200000000`                                                                                            | Nomor WhatsApp yang terdaftar di Gateway sebagai pengirim pesan.                 |
+| `API atau Token Fonnte`            | `abcdef123456xyz789`                                                                                              | Kunci API dari penyedia layanan WhatsApp Gateway (jika menggunakan).                       |
+| `Aktifkan Kirim WA`                | `YA` / `TIDAK`                                                                                        | Mengaktifkan atau menonaktifkan fitur notifikasi WA.              |
+| `Nama Pengirim di WA`                 | `PONPES SHEETIZEN`                                                                                            | Nama Ponpes sebagai pengirim pesan.                 |
 | `URL_ENDPOINT_WA_GATEWAY`           | `https://api.wagateway.com/send`                                                                            | URL endpoint API untuk mengirim pesan dari layanan Gateway.                        |
 | `TEMPLATE_NOTIFIKASI_PEMBAYARAN`    | `Terima kasih Bpk/Ibu Wali Santri {NAMA_SANTRI}, pembayaran {DESKRIPSI_PEMBAYARAN} sejumlah Rp {JUMLAH_BAYAR} pada {TANGGAL_BAYAR} telah kami terima. Salam, Bendahara PONPES YOGS VERSE.` | Template pesan untuk notifikasi pembayaran berhasil. Gunakan placeholder seperti `{NAMA_SANTRI}`. |
 | `TEMPLATE_PENGINGAT_TAGIHAN`        | `Yth. Wali Santri {NAMA_SANTRI}, kami mengingatkan tagihan {DESKRIPSI_TAGIHAN} sejumlah Rp {JUMLAH_TAGIHAN} akan jatuh tempo pada {TANGGAL_JATUH_TEMPO}. Mohon segera melakukan pembayaran. Terima kasih.` | Template pesan untuk pengingat tagihan.                                        |
