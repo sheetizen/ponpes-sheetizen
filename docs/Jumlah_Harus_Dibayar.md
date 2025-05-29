@@ -10,8 +10,9 @@ Berikut adalah detail untuk setiap kolom dalam sheet `Jumlah Harus Dibayar`.
 
 | Nama Kolom                | Tipe Data         | Wajib Diisi? | Contoh Isi                                | Keterangan                                                                                                                                  |
 |---------------------------|-------------------|--------------|-------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `ID_Tagihan`              | Teks (Unik)       | **YA** | `SPP2407`, `UPANGKAL24`, `EKSKULBOLA01`  | Kode unik untuk setiap jenis tagihan. Harus konsisten dan tidak boleh duplikat. Akan digunakan sebagai referensi di sheet `Input Pembayaran`. |
-| `Deskripsi_Tagihan`       | Teks              | **YA** | `SPP Bulan Juli 2024`, `Uang Pangkal 2024`, `Ekskul Sepak Bola Semester 1` | Penjelasan lengkap mengenai jenis tagihan.                                                                                                |
+| `Nama Bulan Masehi`              | Teks       | **YA** | `Januari`, `Februari`, ..., `Desember`
+| Bulan dalam Masehi. |
+| `Nama Bulan Hijriah`       | Teks              | **YA** | `Muharram`, `Safar`, ..., `Dzulhijjah` | Bulan dalam Hijriah.                                                                                               |
 | `Kategori_Tagihan`        | Teks (Pilihan)    | **YA** | `SPP`, `Uang Pangkal`, `Iuran Kegiatan`, `Denda`, `Lain-lain` | Pengelompokan jenis tagihan. Sebaiknya gunakan Data Validation.                                                                          |
 | `Nominal_Tagihan`         | Angka             | **YA** | `500000`                                  | Jumlah nominal yang harus dibayar untuk tagihan ini (dalam Rupiah, tanpa titik atau koma).                                                    |
 | `Periode_Tagihan`         | Teks (Pilihan)    | **YA** | `Bulanan`, `Tahunan`, `Sekali Bayar`, `Per Semester` | Siklus atau frekuensi tagihan. Sebaiknya gunakan Data Validation.                                                                          |
