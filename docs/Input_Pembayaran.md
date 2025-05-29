@@ -84,4 +84,9 @@ Setelah yakin data sudah sesuai, Anda dapat mencetak kuitansi (dalam bentuk PDF)
 * **`Template_Kuitansi`**: Data dari sheet ini akan digunakan untuk mengisi detail pada kuitansi yang akan dicetak.
 
 ---
+---
+
 [Kembali ke Daftar Isi Utama](../README.md)
+
+[Sebelumnya - Setup WA](../docs/SETUP_WA.md) | 
+[Selanjutnya - Jumlah Harus Dibayar](../docs/Database_Santri.md)
