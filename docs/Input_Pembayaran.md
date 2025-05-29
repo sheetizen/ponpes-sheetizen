@@ -24,35 +24,63 @@ Berikut adalah perkiraan detail untuk setiap kolom dalam sheet `Input Pembayaran
 | `Status WA`                   | Teks (Emoji)       | **OTOMATIS**        | `📧`                            | Emoji otomatis jika sudah kirim WA.                                                                                    |
 
 **Catatan Penting:**
-* **`ID_Transaksi_Pembayaran`**: Pastikan unik. Jika diisi manual, buatlah sistem penomoran yang konsisten (misalnya, `TRXP` + TahunBulanTanggal + NomorUrut).
-* **`ID_Santri`**: Harus valid dan ada di sheet `Database Santri`. Gunakan Data Validation dengan sumber dari kolom `ID_Santri` di `Database Santri` untuk menghindari kesalahan input.
-* **`ID_Tagihan_Dibayar`**: Sangat disarankan untuk diisi agar pembayaran dapat dialokasikan ke tagihan yang benar. Gunakan Data Validation dari `ID_Tagihan` di `Jumlah Harus Dibayar`.
+* **CUKUP ISI KOLOM ATAU SEL YANG BERWARNA ABU-ABU**
+* **KOLOM BERWARNA PUTIH OTOMATIS TERISI**
+* **JANGAN HAPUS FORMULA DI SEL WARNA PUTIH**
 * **`Jumlah_Bayar`**: Masukkan angka saja.
-* **Kolom Otomatis**: `Nama_Santri` dan mungkin sebagian `Deskripsi_Pembayaran` dapat diisi otomatis dengan formula jika `ID_Santri` dan `ID_Tagihan_Dibayar` diinput dengan benar. Ini mengurangi kesalahan input manual.
 
 ## 3. Cara Mengisi Sheet Ini
 
 1.  Setiap kali ada pembayaran yang diterima:
     * Tambahkan baris baru di sheet `Input Pembayaran`.
-    * Isi `ID_Transaksi_Pembayaran` (jika manual) atau biarkan terisi (jika otomatis).
     * Masukkan `Tanggal_Bayar`.
-    * Masukkan `ID_Santri` yang melakukan pembayaran. Pastikan `Nama_Santri` yang muncul (jika otomatis) sudah benar.
-    * Pilih `ID_Tagihan_Dibayar` yang sesuai (jika ada). Pastikan `Deskripsi_Pembayaran` yang muncul (jika otomatis) atau yang Anda input manual sudah benar.
-    * Masukkan `Jumlah_Bayar` yang diterima.
-    * Pilih `Metode_Pembayaran`.
-    * Isi kolom `Bank_Pengirim` dan `Nama_Pengirim` jika pembayaran via transfer untuk memudahkan rekonsiliasi.
-    * Catat `Bukti_Bayar_Ref` jika ada.
-    * Masukkan nama `Petugas_Penerima`.
-    * Update `Status_Verifikasi_Pembayaran` jika diperlukan.
-    * Tambahkan `Keterangan_Lain` jika ada info tambahan.
+    * Masukkan `Nama Santri` yang melakukan pembayaran. Pastikan `Kelas` yang muncul (jika otomatis) sudah benar.
+    * Pilih `Kategori` yang sesuai.
+    * Masukkan `Nominal` yang diterima.
+    * Pilih `Metode Pembayaran`.
+    * Cek `Nomor Kuitansi` (otomatis).
 2.  Lakukan pengecekan ulang data yang diinput sebelum beralih ke transaksi berikutnya.
 
-## 4. Keterkaitan dengan Sheet Lain
+## 4. Cetak Kuitansi dan Kirim WA Pembayaran
 
-* **`Database Santri`**: Mengambil `ID_Santri` sebagai referensi utama. Data santri lain (nama, kelas) bisa ditampilkan dari sini.
-* **`Jumlah Harus Dibayar`**: Mengambil `ID_Tagihan` sebagai referensi jenis tagihan. Detail tagihan (deskripsi, nominal standar) bisa ditampilkan dari sini.
-* **`Data Bayar Per Santri`**: Sheet ini adalah **sumber data utama** untuk sheet `Data Bayar Per Santri`. Data pembayaran diagregasi per santri di sheet tersebut.
-* **`Dashboard`**: Total penerimaan, penerimaan per metode bayar, dll., di `Dashboard` berasal dari agregasi data di sheet ini.
+Setelah yakin data sudah sesuai, Anda dapat mencetak kuitansi (dalam bentuk PDF) dan otomatis mengirim ke WA Wali/orang tua santri. Ada 3 cara untuk mencetak kuitansi.
+* [Cetak Berdasarkan Baris yang Dipilih](#cetak-berdasarkan-baris-yang-dipilih)
+* Cetak Berdasarkan Baris yang Dipilih
+* Cetak Berdasarkan Nomor Kuitansi
+* Cetak Berdasarkan Tanggal
+
+### A. Cetak Berdasarkan Baris yang Dipilih
+1. Tandai Baris yang dipilih, disarankan maksimal 10 baris agar scriptnya berjalan dengan optimal. Untuk akun Google Script yang gratis sekali menjalankan script maksimal 6 menit, jika lebih dari itu, tidak akan diproses. Jadi, gunakan maksimal 10 baris saja.
+2. Klik menu `Laporan & Kuitansi`
+3. Pilih `Kuitansi Pembayaran`
+4. Pilih `Cetak & Kirim WA (Belum Proses) - Baris Terpilih`
+5. Otomatis akan mencetak PDF dan kirim WA ke nomor wali/ortu santri jika belum ada status cetak.
+6. Jika sudah ada emoji ✅	atau 📧, tidak akan diproses. Hal ini untuk menghindari dobel kuitansi atau kirim WA.
+
+
+### B. Cetak Berdasarkan Nomor Kuitansi
+1. Copy nomor kuitansi yang ingin dicetak (hanya bisa satu nomor kuitansi per jalankan script). Contoh nomor kuitansi `KWI/280525/001`
+2. Klik menu `Laporan & Kuitansi`
+3. Pilih `Kuitansi Pembayaran`
+4. Pilih `Cetak & Kirim WA berdasarkan nomor jika Belum Diproses`
+5. Otomatis akan mencetak PDF dan kirim WA ke nomor wali/ortu santri jika belum ada status cetak.
+6. Jika sudah ada emoji ✅	atau 📧, tidak akan diproses. Hal ini untuk menghindari dobel kuitansi atau kirim WA.
+
+
+### C. Cetak Berdasarkan Tanggal
+1. Copy nomor kuitansi yang ingin dicetak (hanya bisa satu nomor kuitansi per jalankan script). Contoh nomor kuitansi `KWI/280525/001`
+2. Klik menu `Laporan & Kuitansi`
+3. Pilih `Kuitansi Pembayaran`
+4. Pilih `Cetak & Kirim WA berdasarkan nomor jika Belum Diproses`
+5. Otomatis akan mencetak PDF dan kirim WA ke nomor wali/ortu santri jika belum ada status cetak.
+6. Jika sudah ada emoji ✅	atau 📧, tidak akan diproses. Hal ini untuk menghindari dobel kuitansi atau kirim WA.
+
+## 5. Keterkaitan dengan Sheet Lain
+
+* **`Database Santri`**: Mengambil `Nama Santri` sebagai referensi utama. Data santri lain (kelas) bisa ditampilkan dari sini.
+* **`Jumlah Harus Dibayar`**: Mengambil `Kategori` sebagai referensi jenis tagihan. Detail tagihan (deskripsi, nominal standar) bisa ditampilkan dari sini.
+* **`Data Bayar Per Santri`**: Sheet ini adalah **sumber data utama** untuk sheet `Data Bayar Per Santri`. Data pembayaran disinkronisasi per santri di sheet tersebut.
+* **`Dashboard`**: Total penerimaan, penerimaan per metode bayar, dll., di `Dashboard` berasal dari sinkronisasi data di sheet ini.
 * **`SETUP WA`**: Data dari sini (`Nama_Santri`, `Deskripsi_Pembayaran`, `Jumlah_Bayar`, `Tanggal_Bayar`) digunakan untuk mengisi template notifikasi pembayaran via WhatsApp.
 * **`Template_Kuitansi`**: Data dari sheet ini akan digunakan untuk mengisi detail pada kuitansi yang akan dicetak.
 
