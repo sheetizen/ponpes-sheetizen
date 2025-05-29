@@ -15,7 +15,7 @@ Dokumentasi ini dibagi menjadi beberapa bagian untuk memudahkan pemahaman terhad
 
 ## Gambaran Umum Sistem
 
-Sistem ini menggunakan serangkaian Sheet yang saling terhubung dalam satu file Spreadsheet (atau beberapa file Spreadsheet yang terkoordinasi) untuk mengelola berbagai aspek administrasi keuangan di PONPES YOGS VERSE. Tujuannya adalah untuk mempermudah pencatatan, pelacakan, dan pelaporan keuangan. Keakuratan pengisian data di setiap Sheet sangat krusial untuk validitas output sistem.
+Sistem ini menggunakan serangkaian Sheet yang saling terhubung dalam satu file Spreadsheet (atau beberapa file Spreadsheet yang terkoordinasi) untuk mengelola berbagai aspek administrasi keuangan di PONPES by Sheetizen. Tujuannya adalah untuk mempermudah pencatatan, pelacakan, dan pelaporan keuangan. Keakuratan pengisian data di setiap Sheet sangat krusial untuk validitas output sistem.
 
 ---
 
