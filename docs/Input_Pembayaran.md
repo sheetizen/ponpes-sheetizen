@@ -45,9 +45,8 @@ Berikut adalah perkiraan detail untuk setiap kolom dalam sheet `Input Pembayaran
 
 Setelah yakin data sudah sesuai, Anda dapat mencetak kuitansi (dalam bentuk PDF) dan otomatis mengirim ke WA Wali/orang tua santri. Ada 3 cara untuk mencetak kuitansi.
 * [Cetak Berdasarkan Baris yang Dipilih](#cetak-berdasarkan-baris-yang-dipilih)
-* Cetak Berdasarkan Baris yang Dipilih
-* Cetak Berdasarkan Nomor Kuitansi
-* Cetak Berdasarkan Tanggal
+* [Cetak Berdasarkan Nomor Kuitansi](#cetak-berdasarkan-nomor-kuitansi)
+* [Cetak Berdasarkan Tanggal](#cetak-berdasarkan-tanggal)
 
 ### Cetak Berdasarkan Baris yang Dipilih
 1. Tandai Baris yang dipilih, disarankan maksimal 10 baris agar scriptnya berjalan dengan optimal. Untuk akun Google Script yang gratis sekali menjalankan script maksimal 6 menit, jika lebih dari itu, tidak akan diproses. Jadi, gunakan maksimal 10 baris saja.
@@ -58,7 +57,7 @@ Setelah yakin data sudah sesuai, Anda dapat mencetak kuitansi (dalam bentuk PDF)
 6. Jika sudah ada emoji ✅	atau 📧, tidak akan diproses. Hal ini untuk menghindari dobel kuitansi atau kirim WA.
 
 
-### B. Cetak Berdasarkan Nomor Kuitansi
+### Cetak Berdasarkan Nomor Kuitansi
 1. Copy nomor kuitansi yang ingin dicetak (hanya bisa satu nomor kuitansi per jalankan script). Contoh nomor kuitansi `KWI/280525/001`
 2. Klik menu `Laporan & Kuitansi`
 3. Pilih `Kuitansi Pembayaran`
