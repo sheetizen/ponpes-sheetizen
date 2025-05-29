@@ -49,7 +49,7 @@ Setelah yakin data sudah sesuai, Anda dapat mencetak kuitansi (dalam bentuk PDF)
 * Cetak Berdasarkan Nomor Kuitansi
 * Cetak Berdasarkan Tanggal
 
-### A. Cetak Berdasarkan Baris yang Dipilih
+### Cetak Berdasarkan Baris yang Dipilih
 1. Tandai Baris yang dipilih, disarankan maksimal 10 baris agar scriptnya berjalan dengan optimal. Untuk akun Google Script yang gratis sekali menjalankan script maksimal 6 menit, jika lebih dari itu, tidak akan diproses. Jadi, gunakan maksimal 10 baris saja.
 2. Klik menu `Laporan & Kuitansi`
 3. Pilih `Kuitansi Pembayaran`
