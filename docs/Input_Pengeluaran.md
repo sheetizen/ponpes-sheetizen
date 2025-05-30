@@ -2,7 +2,7 @@
 
 ## 1. Tujuan Sheet
 
-Sheet `Input Pengeluaran` digunakan untuk **mencatat semua transaksi pengeluaran** yang dilakukan oleh PONPES YOGS VERSE. Setiap baris mewakili satu transaksi pengeluaran. Pencatatan yang akurat dan detail di sheet ini penting untuk pelaporan biaya operasional, analisis pengeluaran, dan penyusunan laporan keuangan ponpes secara keseluruhan.
+Sheet `Input Pengeluaran` digunakan untuk **mencatat semua transaksi pengeluaran** yang dilakukan oleh PONPES by Sheetizen. Setiap baris mewakili satu transaksi pengeluaran. Pencatatan yang akurat dan detail di sheet ini penting untuk pelaporan biaya operasional, analisis pengeluaran, dan penyusunan laporan keuangan ponpes secara keseluruhan.
 
 ## 2. Struktur Kolom dan Panduan Pengisian
 
