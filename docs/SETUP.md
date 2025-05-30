@@ -65,3 +65,5 @@ Selain informasi umum tentang ponpes, setting juga untuk
 
 ---
 [Kembali ke Daftar Isi Utama](../README.md)
+ 
+[Selanjutnya - Setup WA](../docs/SETUP_WA.md)
