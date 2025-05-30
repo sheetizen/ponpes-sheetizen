@@ -48,3 +48,6 @@ Berikut adalah perkiraan kolom yang mungkin ada di sheet ini. Ingat, ini adalah 
 
 ---
 [Kembali ke Daftar Isi Utama](../README.md)
+
+[Sebelumnya - Database Santri](../docs/Database_Santri.md) | 
+[Selanjutnya - Input Pengeluaran](../docs/Input_Pengeluaran.md)
