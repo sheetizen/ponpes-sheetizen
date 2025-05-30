@@ -19,7 +19,7 @@ Berikut adalah perkiraan detail untuk setiap kolom dalam sheet `Input Pengeluara
 | `Sumber Dana`      | Teks (Pilihan)    | **YA**        | `Syahriyah Makan`| Sumber dana dari `Input Pembayaran`|
 | `Aset Asal`      | Teks (Pilihan)    | **YA**        | `Bank Jago`| Aset asal dari `Input Pembayaran`|
 | `Aset Tujuan`      | Teks (Pilihan)    | **YA**        | `Bank Jago`| Aset tujuan, khusus untuk jenis pengeluaran `PINDAH ASET`|
-| `Status WA`      | Emoji    | **OTOMATIS**        | `emoji`| Status WA sudah dikirim. Jika WA belum dikirim , tidak ada emoji.|
+| `Status WA`      | Emoji    | **OTOMATIS**        | `📧`| Status WA sudah dikirim. Jika WA belum dikirim , tidak ada emoji.|
 
 **Catatan Penting:**
 * **`Jumlah_Pengeluaran`**: Masukkan angka saja.
@@ -35,18 +35,37 @@ Berikut adalah perkiraan detail untuk setiap kolom dalam sheet `Input Pengeluara
     * Pilih `Kategori Pengeluaran` yang paling sesuai.
     * Pilih `Sumber Dana`.
     * Pilih `Aset Asal`
-    * Pilih `Metode_Pembayaran_Keluar`.
-    * Catat `Penerima_Pembayaran_Vendor` dan `Nomor_Referensi_Bukti`.
-    * Isi kolom `Diajukan_Oleh` dan `Disetujui_Oleh` jika alur tersebut berlaku.
-    * Masukkan nama `Dicatat_Oleh`.
-    * Tambahkan `Catatan_Tambahan_Pengeluaran` jika ada.
-2.  Simpan semua bukti pengeluaran (nota, kuitansi, invoice) secara terorganisir, idealnya dengan mencantumkan `ID_Transaksi_Pengeluaran` pada bukti fisiknya untuk kemudahan pencarian.
+    * `Status WA` akan terisi otomatis setelah kirim WA notif pengeluaran.
 
-## 4. Keterkaitan dengan Sheet Lain
+## 4. Kirim WA Pengeluaran ke Pimpinan
 
-* **`Dashboard`**: Sheet ini adalah **sumber data utama** untuk analisis pengeluaran di `Dashboard` (misalnya, total pengeluaran, pengeluaran per kategori, perbandingan pengeluaran dengan anggaran jika ada).
-* **Laporan Keuangan**: Data dari sheet ini akan menjadi komponen penting dalam penyusunan Laporan Laba Rugi (jika dibuat), khususnya pada bagian Biaya/Beban.
-* **Analisis Anggaran**: Jika ada sheet anggaran, data pengeluaran aktual dari sini dapat dibandingkan dengan anggaran yang telah ditetapkan.
+Setelah yakin data sudah sesuai, Anda dapat mengirim pengeluu (dalam bentuk PDF) dan otomatis mengirim ke WA Wali/orang tua santri. Ada 3 cara untuk mencetak kuitansi.
+* [Cetak Berdasarkan Baris yang Dipilih](#cetak-berdasarkan-baris-yang-dipilih)
+* [Cetak Berdasarkan Tanggal](#cetak-berdasarkan-tanggal)
+
+### Cetak Berdasarkan Baris yang Dipilih
+1. Tandai Baris yang dipilih, disarankan maksimal 10 baris agar scriptnya berjalan dengan optimal. Untuk akun Google Script yang gratis sekali menjalankan script maksimal 6 menit, jika lebih dari itu, tidak akan diproses. Jadi, gunakan maksimal 10 baris saja.
+2. Klik menu `Laporan & Kuitansi`
+3. Pilih `Laporan Pengeluaran`
+4. Pilih `Kirim Rincian WA - Baris Terpilih`
+5. Otomatis akan kirim WA ke nomor pimpian (di sheet `SETUP WA` jika belum ada status kirim WA.
+6. Jika sudah ada emoji 📧, tidak akan diproses. Hal ini untuk menghindari dobel kirim WA.
+
+### Cetak Berdasarkan Tanggal
+1. Copy tanggal yang ingin dicetak (hanya bisa satu tanggal kuitansi per jalankan script). Contoh tanggal `28/05/2025` dibaca 28 Mei 2025.
+2. Klik menu `Laporan & Kuitansi`
+3. Pilih `Laporan Pengeluaran`
+4. Pilih `Kirim Rincian WA - Per Tanggal`
+5. Otomatis akan kirim WA ke nomor pimpinan jika belum ada status cetak.
+6. Jika sudah ada emoji 📧, tidak akan diproses. Hal ini untuk menghindari dobel kirim WA.
+
+## 5. Keterkaitan dengan Sheet Lain
+
+* **`Dashboard`**: Sheet ini adalah **sumber data utama** untuk analisis pengeluaran di `Dashboard` (misalnya, total pengeluaran, pengeluaran per kategori, aset).
 
 ---
+
 [Kembali ke Daftar Isi Utama](../README.md)
+
+[Sebelumnya - Input Pembayaran](../docs/Input_Pembayaran.md) |
+[Selanjutnya - Data Bayar Per Santri](../docs/Data_Bayar_Per_Santri.md) | 
