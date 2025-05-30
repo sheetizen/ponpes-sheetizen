@@ -54,5 +54,5 @@ Kualitas dan akurasi data di sheet `Data Bayar Per Santri` sepenuhnya bergantung
 
 [Kembali ke Daftar Isi Utama](../README.md)
 
-[Sebelumnya - Database Santri](../docs/Database_Santri.md) | 
-[Selanjutnya - Input Pengeluaran](../docs/Input_Pengeluaran.md)
+[Sebelumnya - Input Pengeluaran](../docs/Input_Pengeluaran.md) | 
+[Selanjutnya - Dashboard](../docs/Dashboard.md)
