@@ -88,5 +88,5 @@ Setelah yakin data sudah sesuai, Anda dapat mencetak kuitansi (dalam bentuk PDF)
 
 [Kembali ke Daftar Isi Utama](../README.md)
 
-[Sebelumnya - Setup WA](../docs/SETUP_WA.md) | 
-[Selanjutnya - Jumlah Harus Dibayar](../docs/Database_Santri.md)
+[Sebelumnya - Database Santri](../docs/Database_Santri.md) | 
+[Selanjutnya - Input Pembayaran](../docs/Input_Pembayaran.md)
