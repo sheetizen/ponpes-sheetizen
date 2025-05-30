@@ -84,7 +84,6 @@ Setelah yakin data sudah sesuai, Anda dapat mencetak kuitansi (dalam bentuk PDF)
 * **`Template_Kuitansi`**: Data dari sheet ini akan digunakan untuk mengisi detail pada kuitansi yang akan dicetak.
 
 ---
----
 
 [Kembali ke Daftar Isi Utama](../README.md)
 
