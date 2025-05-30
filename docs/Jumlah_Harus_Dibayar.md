@@ -27,4 +27,4 @@ Berikut adalah detail untuk setiap kolom dalam sheet `Jumlah Harus Dibayar`.
 [Kembali ke Daftar Isi Utama](../README.md)
 
 [Sebelumnya - Database Santri](../docs/Database_Santri.md) | 
-[Selanjutnya - Input Pembayaran](../docs/Input_Pengeluaran.md)
+[Selanjutnya - Input Pembayaran](../docs/Input_Pembayaran.md)
