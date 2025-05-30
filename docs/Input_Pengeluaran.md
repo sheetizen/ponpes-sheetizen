@@ -18,6 +18,7 @@ Berikut adalah perkiraan detail untuk setiap kolom dalam sheet `Input Pengeluara
 | `Kategori Pengeluaran`          | Teks (Pilihan)    | **YA** | `Gaji Guru` | Jenis atau kelompok pengeluaran. Menggunakan Data Validation dari sheet `SETUP`.                                       |
 | `Sumber Dana`      | Teks (Pilihan)    | **YA**        | `Syahriyah Makan`| Sumber dana dari `Input Pembayaran`|
 | `Aset Asal`      | Teks (Pilihan)    | **YA**        | `Bank Jago`| Aset asal dari `Input Pembayaran`|
+| `Aset Tujuan`      | Teks (Pilihan)    | **YA**        | `Bank Jago`| Aset tujuan, khusus untuk jenis pengeluaran `PINDAH ASET`|
 | `Status WA`      | Emoji    | **OTOMATIS**        | `emoji`| Status WA sudah dikirim. Jika WA belum dikirim , tidak ada emoji.|
 
 **Catatan Penting:**
@@ -28,11 +29,12 @@ Berikut adalah perkiraan detail untuk setiap kolom dalam sheet `Input Pengeluara
 
 1.  Setiap kali ada pengeluaran yang dilakukan oleh ponpes:
     * Tambahkan baris baru di sheet `Input Pengeluaran`.
-    * Isi `ID_Transaksi_Pengeluaran` (jika manual).
-    * Masukkan `Tanggal_Pengeluaran`.
-    * Pilih `Kategori_Pengeluaran` yang paling sesuai. Isi `Sub_Kategori_Pengeluaran` jika perlu.
-    * Tulis `Deskripsi_Pengeluaran` secara jelas dan lengkap.
-    * Masukkan `Jumlah_Pengeluaran`.
+    * Isi `Tanggal (M)`.
+    * Masukkan `Keterangan Pengeluaran`.
+    * Masukkan `Nominal`.
+    * Pilih `Kategori Pengeluaran` yang paling sesuai.
+    * Pilih `Sumber Dana`.
+    * Pilih `Aset Asal`
     * Pilih `Metode_Pembayaran_Keluar`.
     * Catat `Penerima_Pembayaran_Vendor` dan `Nomor_Referensi_Bukti`.
     * Isi kolom `Diajukan_Oleh` dan `Disetujui_Oleh` jika alur tersebut berlaku.
