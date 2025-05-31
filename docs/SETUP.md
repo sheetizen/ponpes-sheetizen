@@ -6,14 +6,6 @@ Sheet `SETUP` bertujuan untuk menyimpan semua parameter konfigurasi umum dan inf
 
 ## 2. Struktur Kolom dan Panduan Pengisian
 
-Berikut adalah perkiraan detail untuk setiap kolom dalam sheet `SETUP`. Pastikan untuk mengisi data sesuai dengan panduan.
-
-| Nama Kolom         | Tipe Data          | Wajib Diisi? | Contoh Isi                                     | Keterangan                                                                                                |
-|--------------------|--------------------|--------------|------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| `Nama_Pengaturan`  | Teks               | **YA** | `Nama Ponpes`                                  | Label atau deskripsi dari item pengaturan.                                                                |
-| `Nilai_Pengaturan` | Teks/Angka/Tanggal | **YA** | `PONPES by SHEETIZEN`                            | Nilai aktual dari item pengaturan tersebut.                                                               |
-| `Keterangan`       | Teks               | Tidak        | `Nama resmi institusi sesuai akta pendirian`   | Penjelasan tambahan mengenai item pengaturan jika diperlukan.                                             |
-
 **Contoh Baris Data Pengaturan:**
 
 | Nama_Pengaturan                 | Nilai_Pengaturan                         | Keterangan                                       |
@@ -24,7 +16,7 @@ Berikut adalah perkiraan detail untuk setiap kolom dalam sheet `SETUP`. Pastikan
 | `Nama Kepala Ponpes`            | `K.H. Ahmad Yasin`                       | Nama pimpinan tertinggi ponpes.                  |
 | `Nomor WA atau Telepon`         | `628998138103`                          | Nomor telepon kantor ponpes.                     |
 | `Tahun Ajaran Aktif`            | `2024/2025`                              | Tahun ajaran yang sedang berjalan.               |
-| `Logo Ponpes (Path/URL)`        | `insert -> image -> di dalam sel`         | Lokasi file logo untuk kuitansi/laporan (jika ada). |
+| `Logo Ponpes (Path/URL)`        | `insert -> image -> di dalam sel`         | Masukkan gambar lewat fitur insert. |
 | `Lokasi`                        | `Bandung`                          | Lokasi ponpes.                     |
 | `Tanggal Hari ini`          | `Otomatis Terisi`                          | Otomatis terisi dalam bentuk Hijriah.                     |
 
