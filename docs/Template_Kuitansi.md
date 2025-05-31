@@ -26,15 +26,15 @@ Berikut adalah contoh struktur kuitansinya:
 | `diterima_dari_label` | Label Diterima Dari        | Teks Statis  | Telah Diterima Dari :|                      |                          | 8             |
 | `diterima_dari_value` | Nama Wali/Ortu Santri      | Data Dinamis |                      | `Database Santri`    | `Nama_Wali/Ortu_Santri (Otomatis)` | 9             |
 | `Nama Santri Label`   | Nama Santri                | Teks Statis  | Nama Santri :        |                      |                          | 10             |
-| `Nama Santri`         | Nilai Nama Santri                | Data Dinamis |                      | `Input Pembayaran`   | `Nama_Santri (Otomatis)` | 9             |
-| `kelas_label`         | Label Kelas               | Teks Statis  | Kelas :           |                      |                          | 10            |
-| `kelas_value`        | Nilai Kelas (Angka atau Teks) | Data Dinamis |                      | `Database Santri`   | `Kelas`           | 11            |
-| `metode_pembayaran_label`     | Label Metode            | Teks Statis  | Metode Pembayaran :          |                      |                          | 12            |
-| `metode_value`     | Nilai Metode Pembayaran (Teks)     | Data Dinamis |                      | `Input Pembayaran`   | `Metode Pembayaran` | 13            |
-| `jumlah_uang_label`         | Jumlah Uang     | Teks Statis  | Uang Sejumlah :   |                      |                          | 14            |
-| `jumlah_uang_value`         | Jumlah Pembayaran       | Data Dinamis |                      | `Input Pembayaran`   | `Nominal Pembayaran`   | 15            |
-| `terbilang_label`         | Terbilang     | Teks Statis  | Terbilang   |                      |                          | 14            |
-| `terbilang_value`         | Terbilang       | Data Dinamis |                      | `Otomatis`   | `Dari Kolom Uang Sejumlah`   | 15            |
+| `Nama Santri`         | Nilai Nama Santri                | Data Dinamis |                      | `Input Pembayaran`   | `Nama_Santri (Otomatis)` | 11             |
+| `kelas_label`         | Label Kelas               | Teks Statis  | Kelas :           |                      |                          | 12            |
+| `kelas_value`        | Nilai Kelas (Angka atau Teks) | Data Dinamis |                      | `Database Santri`   | `Kelas`           | 13            |
+| `metode_pembayaran_label`     | Label Metode            | Teks Statis  | Metode Pembayaran :          |                      |                          | 14            |
+| `metode_value`     | Nilai Metode Pembayaran (Teks)     | Data Dinamis |                      | `Input Pembayaran`   | `Metode Pembayaran` | 15            |
+| `jumlah_uang_label`         | Jumlah Uang     | Teks Statis  | Uang Sejumlah :   |                      |                          | 16            |
+| `jumlah_uang_value`         | Jumlah Pembayaran       | Data Dinamis |                      | `Input Pembayaran`   | `Nominal Pembayaran`   | 17            |
+| `terbilang_label`         | Terbilang     | Teks Statis  | Terbilang   |                      |                          | 18            |
+| `terbilang_value`         | Terbilang       | Data Dinamis |                      | `Otomatis`   | `Dari Kolom Uang Sejumlah`   | 19            |
 
 **Catatan Penting:**
 * Sheet ini adalah **DEFINISI TEMPLATE**, bukan tempat mengisi data kuitansi satu per satu.
