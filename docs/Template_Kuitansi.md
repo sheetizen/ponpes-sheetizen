@@ -45,7 +45,7 @@ Berikut adalah contoh struktur kuitansinya:
 * **`Database Santri`**: Dapat menjadi sumber data dinamis untuk informasi detail santri.
 * **`SETUP`**: Dapat menjadi sumber data dinamis untuk informasi umum ponpes yang bersifat statis namun perlu ditampilkan di kuitansi (misalnya, `Nama Ponpes`, `Alamat Ponpes`, `Email dan WA` `Tanggal`).
 
-* ---
+---
 
 [Kembali ke Daftar Isi Utama](../README.md)
 
