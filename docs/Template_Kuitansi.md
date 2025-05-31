@@ -2,7 +2,7 @@
 
 ## 1. Tujuan Sheet
 
-Sheet `Template Kuitansi` **tidak digunakan untuk menyimpan data transaksi kuitansi individual**. Sebaliknya, sheet ini berfungsi sebagai **master definisi atau cetak biru (blueprint)** untuk struktur, format, dan elemen-elemen yang akan ditampilkan pada sebuah kuitansi pembayaran standar PONPES YOGS VERSE.
+Sheet `Template Kuitansi` **tidak digunakan untuk menyimpan data transaksi kuitansi individual**. Sebaliknya, sheet ini berfungsi sebagai **master definisi atau cetak biru (blueprint)** untuk struktur, format, dan elemen-elemen yang akan ditampilkan pada sebuah kuitansi pembayaran standar PONPES by Sheetizen.
 
 Tujuan utamanya adalah untuk:
 1.  **Menstandarisasi tampilan visual** semua kuitansi yang dikeluarkan.
