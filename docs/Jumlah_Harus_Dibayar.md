@@ -20,7 +20,7 @@ Berikut adalah detail untuk setiap kolom dalam sheet `Jumlah Harus Dibayar`.
 **Catatan Penting:**
 * Semua data di sheet ini terisi otomatis.
 * Tidak perlu mengubah apapun.
-* Sheet ini berubah ketika nama mengubah nama di sheet `Data Bayar Per Santri`
+* Sheet ini berubah ketika mengubah nama santri di sheet `Data Bayar Per Santri`
 
 
 ---
