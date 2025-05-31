@@ -42,11 +42,11 @@ Sebagai pengguna yang melihat laporan di sheet ini:
 Sheet `Data Bayar Per Santri` sangat bergantung pada sheet-sheet berikut sebagai sumber datanya:
 
 * **`Input Pembayaran` (KRUSIAL)**:
-    * Menyediakan data `ID_Santri`, `Jumlah_Bayar`, `Tanggal_Bayar`, dan `ID_Tagihan_Dibayar` yang menjadi dasar utama semua kalkulasi pembayaran.
+    * Menyediakan data `Nama_Santri`, `Jumlah_Bayar`, `Tanggal_Bayar`, dan `ID_Tagihan_Dibayar` yang menjadi dasar utama semua kalkulasi pembayaran.
 * **`Database Santri` (KRUSIAL)**:
-    * Menyediakan data `ID_Santri`, `Nama_Lengkap_Santri`, `Kelas`, dan atribut santri lainnya yang ditampilkan sebagai informasi deskriptif.
+    * Menyediakan data `Nama_Santri`, `Kelas`, dan atribut santri lainnya yang ditampilkan sebagai informasi deskriptif.
 * **`Jumlah Harus Dibayar` (KRUSIAL)**:
-    * Menyediakan data `ID_Tagihan`, `Deskripsi_Tagihan`, `Nominal_Tagihan`, `Periode_Tagihan` yang menjadi dasar untuk menentukan kewajiban setiap santri. Logika di sheet `Data Bayar Per Santri` akan mencocokkan santri dengan tagihan yang berlaku untuknya.
+    * Menyediakan data `Deskripsi_Tagihan`, `Nominal_Tagihan`, `Periode_Tagihan` yang menjadi dasar untuk menentukan kewajiban setiap santri. Logika di sheet `Data Bayar Per Santri` akan mencocokkan santri dengan tagihan yang berlaku untuknya.
 
 Kualitas dan akurasi data di sheet `Data Bayar Per Santri` sepenuhnya bergantung pada kualitas dan akurasi data yang diinput pada sheet-sheet sumber di atas.
 
