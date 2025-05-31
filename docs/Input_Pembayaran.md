@@ -67,7 +67,7 @@ Setelah yakin data sudah sesuai, Anda dapat mencetak kuitansi (dalam bentuk PDF)
 
 
 ### Cetak Berdasarkan Tanggal
-1. Copy tanggal yang ingin dicetak (hanya bisa satu nomor kuitansi per jalankan script). Contoh nomor kuitansi `28/05/2025` dibaca 28 Mei 2025.
+1. Copy tanggal yang ingin dicetak (hanya bisa satu tanggal per jalankan script). Contoh tanggal pembayaran yang dapat diproses `28/05/2025` dibaca 28 Mei 2025.
 2. Klik menu `Laporan & Kuitansi`
 3. Pilih `Kuitansi Pembayaran`
 4. Pilih `Cetak & Kirim WA berdasarkan tanggal jika Belum Diproses`
