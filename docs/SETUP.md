@@ -31,7 +31,7 @@ Sheet `SETUP` bertujuan untuk menyimpan semua parameter konfigurasi umum dan inf
 1.  Identifikasi semua parameter konfigurasi yang dibutuhkan oleh sistem administrasi PONPES by Sheetizen.
 2.  Untuk setiap parameter, buat satu baris baru.
 3.  Isi kolom `Nama_Pengaturan` dengan label yang jelas (misalnya, "Nama Ponpes").
-4.  Isi kolom `Nilai_Pengaturan` dengan data yang sesuai (misalnya, "PONPES YOGS VERSE").
+4.  Isi kolom `Nilai_Pengaturan` dengan data yang sesuai (misalnya, "PONPES by Sheetizen").
 5.  Tambahkan `Keterangan` jika diperlukan untuk memperjelas maksud dari pengaturan tersebut.
 6.  Sheet ini biasanya diisi sekali di awal penggunaan sistem dan hanya diubah jika ada perubahan fundamental pada data institusi.
 
