@@ -25,7 +25,7 @@ Sistem Spreadsheet ini terdiri dari beberapa Sheet utama. Klik nama Sheet untuk 
 
 * **Setup & Konfigurasi:**
     * [Sheet: SETUP](./docs/SETUP.md) - Pengaturan parameter umum sistem.
-    * [Sheet: SETUP WA](./docs/SETUP_WA.md) - Pengaturan terkait integrasi WhatsApp.
+    * [Sheet: SETUP SCRIPT dan SETUP WA](./docs/SETUP_WA.md) - Pengaturan terkait Google Apps Script dan integrasi WhatsApp.
     * [Sheet: Jumlah Harus Dibayar](./docs/Jumlah_Harus_Dibayar.md) - Master data jenis dan nominal tagihan.
 
 * **Data Master:**
