@@ -2,7 +2,7 @@
 
 ## 1. Tujuan Sheet
 
-Sheet `Database Santri` berfungsi sebagai **database utama** yang menyimpan semua informasi detail mengenai santri yang terdaftar di PONPES YOGS VERSE. Data di sheet ini menjadi rujukan utama untuk identitas dan status santri dalam sistem administrasi keuangan.
+Sheet `Database Santri` berfungsi sebagai **database utama** yang menyimpan semua informasi detail mengenai santri yang terdaftar di PONPES by Sheetizen. Data di sheet ini menjadi rujukan utama untuk identitas dan status santri dalam sistem administrasi keuangan.
 
 ## 2. Struktur Kolom dan Panduan Pengisian
 
@@ -23,7 +23,7 @@ Berikut adalah detail untuk setiap kolom dalam sheet `Database Santri`. Pastikan
 **Catatan Penting:**
 * **`NAMA SANTRI`**: Kolom ini adalah *Primary Key*. Pastikan memasukkan nama santri dengan benar. `NAMA SANTRI` dari sheet ini akan digunakan di sheet `Input Pembayaran` dan `Data Bayar Per Santri` untuk menghubungkan data.
 * **Format Tanggal**: Usahakan menggunakan format tanggal yang konsisten di seluruh spreadsheet (misalnya, `DD/MM/YYYY`).
-* **Pilihan Terbatas (Data Validation)**: Untuk kolom seperti `Jenis_Kelamin`, `Status_Santri`, `Hubungan_Wali`, sangat disarankan untuk menggunakan fitur "Data Validation" di Spreadsheet untuk membuat daftar pilihan yang baku. Ini menjaga konsistensi data dan memudahkan input.
+* **Pilihan Terbatas (Data Validation)**: Untuk kolom seperti `Jenis_Kelamin`, `Status_Santri` menggunakan fitur "Data Validation" di Spreadsheet untuk membuat daftar pilihan yang baku. Ini menjaga konsistensi data dan memudahkan input.
 * **`No_HP_Wali`**: Pastikan formatnya benar dan valid untuk pengiriman notifikasi WhatsApp (jika fitur WA aktif).
 
 ## 3. Cara Mengisi Sheet Ini
@@ -38,7 +38,7 @@ Berikut adalah detail untuk setiap kolom dalam sheet `Database Santri`. Pastikan
     * **Peringatan**: Hindari mengubah `NAMA SANTRI` jika sudah ada transaksi terkait santri tersebut, karena dapat merusak integritas data di sheet lain. Jika terpaksa diubah, pastikan semua `NAMA SANTARI` yang merujuk di sheet lain juga diperbarui.
 
 3.  **Menonaktifkan Santri**:
-    * Ubah nilai di kolom `Status_Santri` menjadi "Pindah" atau "Lulus" (sesuai pilihan yang tersedia).
+    * Ubah nilai di kolom `Status_Santri` menjadi "Pindah" atau "Lulus".
     * Jangan menghapus baris data santri yang sudah tidak aktif jika riwayat transaksinya masih ingin disimpan untuk keperluan audit atau pelaporan masa lalu.
 
 ## 4. Keterkaitan dengan Sheet Lain
@@ -46,7 +46,7 @@ Berikut adalah detail untuk setiap kolom dalam sheet `Database Santri`. Pastikan
 * **`Input Pembayaran`**: Menggunakan `NAMA SANTRI` dari sheet ini untuk mencatat siapa yang melakukan pembayaran. `KELAS` bisa ditarik (menggunakan `VLOOKUP` atau `XLOOKUP`) untuk verifikasi.
 * **`Data Bayar Per Santri`**: Menampilkan data santri (seperti `Nama_Lengkap`, `Kelas`, `Jumlah yang Sudah Dibayar`) yang diambil dari sheet ini berdasarkan `NAMA SANTRI`.
 * **`NOTIFIKASI WA (BUKTI BAYAR/KUITANSI)`**: `NAMA ORTU/WALI`, `NAMA SANTRI`, `NOMOR WA ORTU/WALI` digunakan untuk personalisasi notifikasi WhatsApp.
-* **`Jumlah Harus Dibayar`**: Mungkin ada logika yang mengaitkan `Kelas` santri dengan jenis tagihan tertentu.
+* **`Jumlah Harus Dibayar`**: Ada logika yang mengaitkan `Kelas` santri dengan jenis tagihan tertentu.
 
 ---
 ---
