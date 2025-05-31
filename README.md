@@ -41,9 +41,6 @@ Sistem Spreadsheet ini terdiri dari beberapa Sheet utama. Klik nama Sheet untuk 
 
 * **Utilitas & Lain-lain:**
     * [Sheet: Template Kuitansi](./docs/Template_Kuitansi.md) - Format dasar untuk pembuatan kuitansi.
-    * [Sheet: ccc](./docs/ccc.md) - **(Tujuan sheet ini perlu diinvestigasi dan didokumentasikan)**
-
-*(Catatan: Anda perlu membuat folder `docs` di repositori GitHub Anda dan meletakkan file-file Markdown detail untuk setiap sheet di dalamnya, misalnya `docs/SETUP.md`, `docs/Database_Santri.md`, dst.)*
 
 ---
 
@@ -61,7 +58,7 @@ Sistem Spreadsheet ini terdiri dari beberapa Sheet utama. Klik nama Sheet untuk 
     * Catat pengeluaran ponpes di Sheet `Input Pengeluaran`.
 
 4.  **Pemrosesan & Pelaporan**:
-    * Sheet `Data Bayar Per Santri` dan `Dashboard` idealnya menampilkan data yang sudah diolah dari Sheet input (menggunakan formula spreadsheet).
+    * Sheet `Data Bayar Per Santri` dan `Dashboard` untuk menampilkan data yang sudah diolah dari Sheet input (menggunakan formula spreadsheet).
     * Sheet `Template Kuitansi` menjadi acuan untuk pembuatan bukti bayar.
 
 ---
@@ -70,7 +67,7 @@ Sistem Spreadsheet ini terdiri dari beberapa Sheet utama. Klik nama Sheet untuk 
 
 1.  **Pastikan Setup Awal Benar**: Sebelum melakukan input transaksi, pastikan semua sheet di bagian "Setup & Konfigurasi" telah diisi dengan benar.
 2.  **Input Data Master**: Lengkapi `Database Santri` sebelum mencatat transaksi yang berkaitan dengan santri.
-3.  **Konsistensi Data**: Gunakan ID yang konsisten (`ID_Santri`, `ID_Tagihan`) saat melakukan referensi antar Sheet.
+3.  **Konsistensi Input Data**: Catat Transaksi secara konsisten agar data yang dimiliki akurat.
 4.  **Verifikasi Input**: Selalu periksa kembali data yang Anda masukkan untuk menghindari kesalahan.
 5.  **Backup Data**: Lakukan backup file Spreadsheet Anda secara berkala.
 
